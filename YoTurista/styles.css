@@ -10,75 +10,85 @@ body {
     padding: 0;
     /*padding: 0.1rem;*/
 }
-nav ul {
-    top: 0;
-    margin: 0;
-    padding: 0 auto 2rem auto;
-    text-align: center;
-    list-style: none;
-    display: inline;
-    background-color: rgb(57, 91, 100);
-    align-items: center;
-}
-nav {
-    top: 0;
-    margin:0;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(57, 91, 100);
 
+/* menu */
+
+.menu {
+    border-radius: 10px;
+    border: 1px solid dotted;
+    background-color: rgb(44, 51, 51);
+    margin: 0.6rem;
+    padding: 0.3rem;
+    font-size: 2rem;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+    position: fixed;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: rgb(57, 91, 100, 0.9);
+    box-shadow: 10px 8px 16px 10px rgba(0, 0, 0, 0.4);
+    padding: 0rem;
+    /* padding: 1rem 1.3rem; */
+    z-index: 1;
+    /* top: 0; */
+    /* left: 0; */
+    width: 16rem;
+    height: fit-content;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+}
+.dropdown-content a:hover {
+    padding: 0.5rem;
+    box-shadow: 10px 8px 16px 10px rgba(38, 62, 68, 0.3);
+    /*font-size: 1.9rem;*/
+    background-color: #aaa;
+    display: block;
 }
 li {
-    font-size: 1.8rem;
-    color:rgb(231, 246, 242);
-    
-    margin: 1rem;
-    padding: 0.5rem 1rem;
-    
+    /* font-size: 1.5rem; */
+    color:rgb(231, 246, 242);    
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+    /* width: 100%; */
+    /* height: 2.5rem; */
 }
-li a:hover {
-    box-shadow: 4px 4px 15px rgba(38, 62, 68, 0.3);
-    font-size: 1.9rem;
-}
-li a {
+a {
     text-decoration: none;
     color: rgb(231, 246, 242);
     font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 0rem;
+    /* width: 16rem; */
 }
-nav ul li {
-    display: inline;
-    align-items: center;
-}
-
-button {
-    border-radius: 3px;
-    border: 1px solid;
-    background-color: rgb(44, 51, 51);
-    margin: 1rem;
-    font-size: 3rem;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0,);
-
-}
-button a {
-    text-decoration: none;
+li a:hover {
+    background-color: #555;
     color: rgb(231, 246, 242);
-    padding: 2px;
-    font-size: 1.2rem;
-}
-button:hover {
-    background-color:rgb(63, 77, 77);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 6rem;
-    height: 2.1rem;
-}
+    /* width: 16rem; */
+} 
+
+/* introduccion */
+
 h1 {
     font-family: 'Rubik Vinyl', cursive;
-    margin: 5rem auto 0 auto;
-    padding: 1.5rem auto 0 auto;
+    margin: 1rem auto 0 auto;
+    padding: 0 auto 0 auto;
     font-size: 3.4rem;
     font-weight: 1px;
     color: rgb(23, 58, 49);
     text-align: center;
+}
+i {
+    padding: 0.2rem 0.3rem 0.2rem 0.2rem;
 }
 h1 i {
     color: rgb(23, 58, 49);
@@ -88,139 +98,283 @@ h1 i {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
+    height: fit-content;
 }
 .introduccion img {
     width: 90%;
     height: auto;
-    
+    box-shadow: 4px 4px 14px 4px rgb(0, 0, 0);
+    margin: 1rem;
 }
+
 h2 {
     font-family:  'Prata', serif;
     padding: 1rem;
     text-align: center;
 }
+
+/* destinos */
+
 h3 {
     padding: 1rem;
     font-family:  'Prata', serif;
 }
-
+.destinos {
+    height: 60rem;
+}
 .destinos .article-destinos{
     display: flex;
     flex-direction: row;
-
+    margin: 2rem;
 }
 .article-destinos article {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.article-destinos button{
-    margin: 2rem;
-    width: max-content; /*igual al max-width?*/
-    padding: 0.2rem;
+    margin: 1rem 0.1rem;
+    height: 58rem;
+    width: fit-content;
 }
 
 .article-destinos article img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     align-items: center;
-    border-color: 1px black dotted;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
+    
 }
-.article-destinos button:hover {
-    width: 8rem;
-    height: 2.1rem;
+
+.clickAqui {
+    border-radius: 3px;
+    border: 1px solid;
+    background-color: rgb(44, 51, 51);
+    margin: 2rem;
+    font-size: 3rem;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    width: max-content;
+    /* width: 7.2rem; */
+    height: 2rem;
+    padding: 0.2rem;
 }
-.aa {
-    font-family: 'Farsan', cursive;
+.clickAqui a {
+    color: rgb(231, 246, 242);
+    padding: 1px;
+    font-size: 1rem;
+
 }
-.bb {
-    font-family: 'Great Vibes', cursive;
+.clickAqui:hover {
+    background-color:rgb(63, 77, 77);
+    box-shadow: 4px 4px 14px 8px rgba(0, 0, 0, 0.2);
+    /* padding: 0.3rem; */
+    /* width: 8.1rem; */
+    /* height: 4.1rem; */
 }
-.cc {
-    font-family: 'Indie Flower', cursive;
+
+/* info */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    padding: 2rem 0rem;;
+    height: fit-content;
+    background-color: rgb(57, 91, 100);
 }
-.dd {
-    font-family: 'Rubik 80s Fade', cursive;
+.info .info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
 }
-.ff {
-    font-family: 'Prata', serif;
+.article1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 2rem;
+    justify-content: center;
+
 }
-.gg {
-    font-family: 'Rubik Vinyl', cursive;
+.article2 {
+    align-items: flex-end;
+    margin: 0rem 2rem;
+    
 }
+
 p {
+    font-family: 'Farsan', cursive,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
     padding: 0.5rem;
 }
-i {
-    padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+
+.info .info-container .article2 img {
+    box-shadow: 10px 10px 14px 8px rgba(0, 0, 0, 0.2);
+    margin: 4rem;
+    height: 14rem;
+    width: 20rem;
+
 }
-footer {
-    background-color: rgb(57, 91, 100);   
-    width: auto;
-    height: 4rem;
-    
+.info .info-container .article2 img:hover {
+    transform: scale(1.1, 1.1);
 }
-footer a, i {
+.info section p {
     display: flex;
     flex-direction: column;
-    color:rgb(255 255 255);
+    align-items: start;
+    justify-content: start;
+    color:#fff;
+}
+.info section h2 {
+    color:#ffe;
+}
+/* mapa */
+
+.mapa {
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-/*en escritorios*/
-@media screen and (max-width: 1023px) {
-        nav ul li{
-            display: block;
-            padding: 0.3rem 1.5rem;
+/* footer */
+
+footer {
+    /* background-color: rgb(57, 91, 100);    */
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    padding: 0rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a, i {
+    color:rgb(255 255 255);
+}
+
+/* Movile */
+
+ @media screen and (max-width: 840px) {
+        .menu {
+            border-radius: 10px;
+            border: 1px solid dotted;
+            background-color: rgb(44, 51, 51);
+            margin: 0.6rem;
+            padding: 0.2rem;
+            font-size: 1.5rem;
+            box-shadow: 3px 3px 8px rgb(0, 0, 0);
+            position: fixed;
+            z-index: 1;
+        }
+        li, a {
+            font-size: 1.2rem; 
+        }
+
+        .dropdown-content {
+            width: fit-content;
+            height: 60rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .introduccion {
+            height: 45rem;
+            position: relative;
+        }
+        .destinos{ 
+            /* height: 60rem; */
+            position: relative;
+            top: 1rem;
+
+        }
+        h3 {
             font-size: 1.2rem;
-            margin: 0;
-            background-color: rgba(57, 91, 100, 0.1);
-            
         }
-        nav ul{
-            margin: 0;
-            top: 0;
-            padding: 0;
-
+        p {
+            font-size: 1.2rem;
         }
-        nav {
-            background-color: rgba(57, 91, 100, 0.5);
-
-        }
-
-
-}
- @media (max-width: 713px) {
         .destinos .article-destinos{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             border: 2px solid #aaa;
-        }
-        /*.article-destinos article {
-            display: flex;
-            flex-direction: row;
+            height: 170rem;
         }
         .article-destinos article img {
-            
+            width: 100%;
+            min-width: 80%;
+            height: 60%;
+            align-items: center;
         }
-        */
-
+        .article-destinos article {
+            border: 1px dashed #aaa;
+            /* height: fit-content; */
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem;
+            height: 60rem;
+            position: relative;
+            bottom: -110rem;
+            /* overflow: hidden; */
+        }
+        .info .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+        .info .info-container .article2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info .info-container .article2 img {
+            width:80%;
+            height:70%;
+        }
+        .mapa {
+            height: 60rem;
+            position: relative;
+            bottom: -93rem;
+        }
+        footer {
+            height: 10rem;
+            position: relative;
+            bottom: -80rem;
+        }
 }
-/*
-@media (min-width: 1097px){}
-*/
 
-/*
-@media screen and (max-width: 767px) {
+/* Tablet */
 
-@media (min-width: 600px){
-}
-
-*/
-
+@media screen and (min-width: 841px) and (max-width: 1230px)  {
+    .destinos {
+        margin: auto;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 170rem;
+    }
+    .destinos .article-destinos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #aaa;
+        height: 168rem;
+        width: 50rem;
+    }
+} 
 
 /*max-widht: 18rem con un width de 90%
 me va controlar que cuando el ancho 

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,25 +7,28 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Great+Vibes&family=Indie+Flower&family=Prata&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Farsan&family=Great+Vibes&family=Indie+Flower&family=Prata&family=Rubik+80s+Fade&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/800b0f564e.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon"  href="person-walking-luggage-solid.svg">
+    <link rel="shortcut icon" href="person-walking-luggage-solid.svg">
 
-   <title>YoTurista</title>
+    <title>YoTurista</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="dropdown">
+            <button class="menu"><i class="fa-solid fa-bars"></i></button>
+            <ul class="dropdown-content">
                 <li><a href="#"><i class="fa-solid fa-house"></i>Introducción</a></li>
-                <li><a href="#">Contenido</a></li>
-                <li><a href="#destinos">Destinos</a></li><!--dropdown-->
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Volver a Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-plus"></i>Contenido</a></li>
+                <li><a href="#destinos"><i class="fa-solid fa-map-location-dot"></i>Destinos</a></li><!--dropdown-->
+                <li><a href="#"><i class="fa-solid fa-user-large"></i>Contacto</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>Volver a Inicio</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +37,13 @@
         <h1><i class="fa-solid fa-person-walking-luggage"></i>Yo Turista</h1>
         <section class="introduccion">
             <h2>Bolivia</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia temporibus, minus ipsam eos eveniet accusantium distinctio nesciunt pariatur fuga assumenda animi impedit repellendus explicabo, nemo qui voluptatibus totam cumque est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis unde amet voluptas labore nemo
+                accusamus, beatae error libero, nisi ad quis quasi a eligendi, similique minus esse autem quidem.
+                Libero quas aperiam voluptatem voluptates, tempora sint molestias odio ab nisi nam tenetur a ducimus est
+                nesciunt in, veniam consequuntur facere excepturi! Quis, impedit. Assumenda aut similique qui quia
+                doloribus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia temporibus, minus ipsam eos
+                eveniet accusantium distinctio nesciunt pariatur fuga assumenda animi impedit repellendus explicabo,
+                nemo qui voluptatibus totam cumque est?</p>
             <img src="./imagenes/fuerte-de-samaipata.jpg" alt="..">
         </section>
     </main>
@@ -44,40 +54,63 @@
         <article class="article-destinos" id="destinos">
             <article>
                 <h3>Samaipata</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque eum voluptas, commodi harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto
+                    voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque
+                    eum voluptas, commodi harum.</p>
                 <img src="./imagenes/bolivia-ruinas-de-samaipata-06.webp" alt="..">
-                <button><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
-                </article>
+                <button class="clickAqui"><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
+            </article>
             <article>
                 <h3>Santa Cruz</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque eum voluptas, commodi harum.</p>
-                 <img src="./imagenes/plaza-24-de-sept-chico.jpg" alt="..">
-                 <button><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
-                </article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto
+                    voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque
+                    eum voluptas, commodi harum.</p>
+                <img src="./imagenes/plaza-24-de-sept-chico.jpg" alt="..">
+                <button class="clickAqui"><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
+            </article>
             <article>
                 <h3>Cochabamba</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque eum voluptas, commodi harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias excepturi fugit at iusto
+                    voluptas earum. Dolorem sapiente itaque molestias tenetur autem facere, magni impedit, doloremque
+                    eum voluptas, commodi harum.</p>
                 <img src="./imagenes/Telefericocochabamba.jpg" alt="..">
-                <button><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
+                <button class="clickAqui"><a href="#" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>Click aquí</a></button>
             </article>
         </article>
     </section>
 
     <hr>
 
-        <p class="aa">Hola que tal?</p>
-        <p class="bb">Hola que tal?</p>
-        <p class="cc">Hola que tal?</p>
-        <p class="dd">Hola que tal?</p>
-        <p class="ff">Hola que tal?</p>
-        <p class="gg">Hola que tal?</p>
+    <section class="info">
+        <section class="info-container">
+            <article class="article1">
+                <h2>Mas Información</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde corporis libero reiciendis, nam magni sapiente est obcaecati dolor harum totam similique aliquid, temporibus debitis exercitationem iste optio nostrum laboriosam repellendus.
+                Quia blanditiis eaque omnis enim eveniet magni quibusdam minima eius veritatis tempore labore commodi nesciunt cupiditate voluptatem iusto, esse suscipit odit sequi. Ullam odio non excepturi fuga culpa, ad incidunt!
+                Dolore, illum eligendi optio officiis animi tempora aliquam sunt earum dicta id repellat voluptas perferendis! Adipisci, nihil eius dolores odio dolore aspernatur consequuntur odit nesciunt officiis cumque harum mollitia dolor.</p>
+                <button class="clickAqui"><a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Ver en mapa</a></button>
+            </article>
+            <article class="article2">
+                <img src="./imagenes/plaza-24-de-sept-chico2.jpg" alt="">
+            </article>
+        </section>
+    </section>
 
-    <button><a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Boton</a></button>
-    
+    <hr>
+
+    <section class="mapa">
+        <article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.1696008304!2d-63.182296661565644!3d-17.78372453736093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e988a71e527d%3A0x44de583314bf5b6e!2sPlaza%20Metropolitana%2024%20de%20Septiembre!5e0!3m2!1ses!2sar!4v1681206297770!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </section>
+
     <footer>
         <a>Redes</a>
         <i>&copy;YoTurista</i>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

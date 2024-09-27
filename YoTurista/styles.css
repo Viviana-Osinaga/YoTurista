@@ -256,8 +256,15 @@ footer a, i {
 }
 
 /* Movile */
-
- @media screen and (max-width: 840px) {
+@media (max-width: 360) {
+    .menu {
+        font-size: 10rem;
+    }
+    /* .article-destinos article img {
+        object-fit: contain;
+    } */
+}
+@media screen and (max-width: 840px) {
         .menu {
             border-radius: 10px;
             border: 1px solid dotted;
@@ -308,10 +315,11 @@ footer a, i {
             height: 170rem;
         }
         .article-destinos article img {
-            width: 100%;
-            min-width: 80%;
+            width: 98%;
+            min-width: 70%;
             height: 60%;
             align-items: center;
+            /* object-fit: contain; */
         }
         .article-destinos article {
             border: 1px dashed #aaa;
@@ -373,6 +381,9 @@ footer a, i {
         border: 2px solid #aaa;
         height: 168rem;
         width: 50rem;
+    }
+    .article-destinos article img {
+        object-fit: cover;
     }
 } 
 

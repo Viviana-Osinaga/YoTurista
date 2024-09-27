@@ -23,3 +23,8 @@ rgb(44, 51, 51) botones
 rgb(231, 246, 242) letra de botones
 rgb(165, 201, 202) color de pagina
 rgb(57, 91, 100) color de contraste
+
+colores de jonathan
+#473BF0
+#0B4F6C
+#23b5d3

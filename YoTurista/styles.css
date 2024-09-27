@@ -8,7 +8,6 @@ body {
     background-color: rgb(165, 201, 202);
     margin: 0;
     padding: 0;
-    /*padding: 0.1rem;*/
 }
 
 /* menu */
@@ -34,10 +33,7 @@ body {
     background-color: rgb(57, 91, 100, 0.9);
     box-shadow: 10px 8px 16px 10px rgba(0, 0, 0, 0.4);
     padding: 0rem;
-    /* padding: 1rem 1.3rem; */
     z-index: 1;
-    /* top: 0; */
-    /* left: 0; */
     width: 16rem;
     height: fit-content;
 }
@@ -48,18 +44,15 @@ body {
 .dropdown-content a:hover {
     padding: 0.5rem;
     box-shadow: 10px 8px 16px 10px rgba(38, 62, 68, 0.3);
-    /*font-size: 1.9rem;*/
+
     background-color: #aaa;
     display: block;
 }
 li {
-    /* font-size: 1.5rem; */
     color:rgb(231, 246, 242);    
     margin: 0rem;
     padding: 0rem;
     list-style-type: none;
-    /* width: 100%; */
-    /* height: 2.5rem; */
 }
 a {
     text-decoration: none;
@@ -68,12 +61,11 @@ a {
     font-size: 1.4rem;
     padding: 1rem;
     margin: 0rem;
-    /* width: 16rem; */
 }
 li a:hover {
     background-color: #555;
     color: rgb(231, 246, 242);
-    /* width: 16rem; */
+
 } 
 
 /* introduccion */
@@ -121,27 +113,56 @@ h3 {
 }
 .destinos {
     height: 60rem;
+    border: 1px solid rgb(243, 241, 245);
 }
 .destinos .article-destinos{
     display: flex;
     flex-direction: row;
-    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 59rem;
 }
-.article-destinos article {
+.article-destinos .cards-1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 1rem 0.1rem;
+    width: 30%;
     height: 58rem;
-    width: fit-content;
-}
 
-.article-destinos article img {
+}
+.article-destinos .cards-1 img {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    box-shadow: 4px 4px 14px 4px rgb(0, 0, 0);
+}
+.article-destinos .cards-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.5);
-    
+    width: 30%;
+    height: 58rem;
+}
+.article-destinos .cards-2 img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 14px 4px rgb(0, 0, 0);
+}
+.article-destinos .cards-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 58rem;
+}
+.article-destinos .cards-3 img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 14px 4px rgb(0, 0, 0);
 }
 
 .clickAqui {
@@ -152,7 +173,6 @@ h3 {
     font-size: 3rem;
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
     width: max-content;
-    /* width: 7.2rem; */
     height: 2rem;
     padding: 0.2rem;
 }
@@ -165,9 +185,6 @@ h3 {
 .clickAqui:hover {
     background-color:rgb(63, 77, 77);
     box-shadow: 4px 4px 14px 8px rgba(0, 0, 0, 0.2);
-    /* padding: 0.3rem; */
-    /* width: 8.1rem; */
-    /* height: 4.1rem; */
 }
 
 /* info */
@@ -194,12 +211,10 @@ h3 {
     align-items: center;
     margin: 0rem 2rem;
     justify-content: center;
-
 }
 .article2 {
     align-items: flex-end;
-    margin: 0rem 2rem;
-    
+    margin: 0rem 2rem;  
 }
 
 p {
@@ -239,7 +254,6 @@ p {
 /* footer */
 
 footer {
-    /* background-color: rgb(57, 91, 100);    */
     width: 100%;
     height: 4rem;
     margin: 0;
@@ -255,7 +269,117 @@ footer a, i {
     color:rgb(255 255 255);
 }
 
+@media screen and (max-width: 840px) {
+    .menu {
+        border-radius: 10px;
+        border: 1px solid dotted;
+        background-color: rgb(44, 51, 51);
+        margin: 0.6rem;
+        padding: 0.2rem;
+        font-size: 1.5rem;
+        box-shadow: 3px 3px 8px rgb(0, 0, 0);
+        position: fixed;
+        z-index: 1;
+    }
+    li, a {
+        font-size: 1.2rem; 
+    }
+
+    .dropdown-content {
+        width: fit-content;
+        height: 60rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .introduccion {
+        height: 50rem;
+    }
+    .destinos{ 
+        height: 54rem;
+        position: relative;
+        top: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .destinos .article-destinos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid #aaa;
+        height: 50rem;
+    }
+    .article-destinos .cards-1 {
+        width: 32%;
+    }
+    .article-destinos .cards-2 {
+        width: 32%;
+    }
+    .article-destinos .cards-3 {
+        width: 32%;
+    }
+    .article-destinos article img {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .article-destinos article {
+        border: 1px dashed #aaa;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 54rem;
+    }
+    .info .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .info .info-container .article2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .info-container .article2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .info .info-container .article2 img {
+        width:90%;
+        height:80%;
+        margin: 0;
+    }
+    .mapa {
+        height: 20rem;
+
+    }
+    iframe {
+        width: 400px;
+        height: 210px;
+    }
+    footer {
+        height: 10rem;
+    }
+}
+
 /* Movile */
+<<<<<<< HEAD
 @media (max-width: 360) {
     .menu {
         font-size: 10rem;
@@ -361,6 +485,56 @@ footer a, i {
             position: relative;
             bottom: -80rem;
         }
+=======
+
+@media screen and (max-width: 360px) {
+    .introduccion {
+        height: 41rem;
+    }
+    .destinos {
+        height: 120rem;
+    }
+    .destinos .article-destinos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 119rem;
+    }
+    .article-destinos .cards-1 {
+        height: 40rem;
+        width: 100%;
+    }
+    .article-destinos .cards-2 {
+        height: 40rem;
+        width: 100%;
+    }
+    .article-destinos .cards-3 {
+        height: 40rem;
+        width: 100%;
+    }
+    .info {
+        height: 50rem;
+    }
+    .info .info-container .article2 {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center; 
+    }
+    .info .info-container .article2 img {
+        width: 88%;
+    }
+    .mapa {
+        height: 20rem;
+    }
+    iframe {
+        width: 20rem;
+        height: 13rem;
+    }
+>>>>>>> c983c86ea104fdb177e78dd84f71355c0799a722
 }
 
 /* Tablet */
@@ -371,25 +545,31 @@ footer a, i {
         display: flex;
         align-items: end;
         justify-content: center;
-        height: 170rem;
+        height: 58rem;
     }
     .destinos .article-destinos {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content:space-evenly;
         border: 2px solid #aaa;
-        height: 168rem;
-        width: 50rem;
+        height: 54rem;
+        width: 100%;
+    }
+    .info {
+        height: 45rem;
+    }
+    .mapa {
+        height: 38rem;
+    }
+    iframe {
+        width: 700px;
+        height: 400px;
+    }
+    footer {
+        height: 10rem;
     }
     .article-destinos article img {
         object-fit: cover;
     }
 } 
-
-/*max-widht: 18rem con un width de 90%
-me va controlar que cuando el ancho 
-llegue a 18rem el width no va seguir 
-creciendo por mas que yo tenga una pantalla
-mas grande. me limita el width cuando 
-se agranda la pantalla*/

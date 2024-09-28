@@ -21,6 +21,7 @@ body {
     font-size: 2rem;
     box-shadow: 3px 3px 8px rgb(0, 0, 0);
     position: fixed;
+    z-index: 1;
 }
 .dropdown {
     position: relative;
@@ -44,7 +45,6 @@ body {
 .dropdown-content a:hover {
     padding: 0.5rem;
     box-shadow: 10px 8px 16px 10px rgba(38, 62, 68, 0.3);
-
     background-color: #aaa;
     display: block;
 }

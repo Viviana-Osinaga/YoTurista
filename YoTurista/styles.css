@@ -14,7 +14,6 @@ body {
 
 .menu {
     border-radius: 10px;
-    border: 1px solid dotted;
     background-color: rgb(44, 51, 51);
     margin: 0.6rem;
     padding: 0.3rem;
@@ -35,37 +34,25 @@ body {
     box-shadow: 10px 8px 16px 10px rgba(0, 0, 0, 0.4);
     padding: 0rem;
     z-index: 1;
-    width: 16rem;
     height: fit-content;
 }
 .dropdown:hover .dropdown-content {
     display: block;
     position: fixed;
 }
-.dropdown-content a:hover {
-    padding: 0.5rem;
-    box-shadow: 10px 8px 16px 10px rgba(38, 62, 68, 0.3);
-    background-color: #aaa;
-    display: block;
-}
-li {
-    color:rgb(231, 246, 242);    
-    margin: 0rem;
-    padding: 0rem;
-    list-style-type: none;
-}
-a {
+.dropdown-content a {
     text-decoration: none;
     color: rgb(231, 246, 242);
     font-weight: bold;
     font-size: 1.4rem;
-    padding: 1rem;
-    margin: 0rem;
+    padding: 0.4rem;
 }
-li a:hover {
-    background-color: #555;
+.dropdown-content a:hover {
+    box-shadow: 10px 8px 16px 10px rgba(38, 62, 68, 0.3);
+    background-color: #aaa;  
+    display: block;
     color: rgb(231, 246, 242);
-} 
+}
 
 /* introduccion */
 
@@ -97,13 +84,11 @@ h1 i {
     box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
     margin: 1rem;
 }
-
 h2 {
     font-family:  'Prata', serif;
     padding: 1rem;
     text-align: center;
 }
-
 img:hover {
     filter: drop-shadow(4px 4px 14px rgb(255, 255, 255));
     cursor: pointer;
@@ -162,7 +147,6 @@ h3 {
     height: 50%;
     box-shadow: 4px 4px 14px 4px rgb(0, 0, 0);
 }
-
 .clickAqui {
     border-radius: 3px;
     border: 1px solid;
@@ -198,7 +182,6 @@ h3 {
     color: #fff;
     padding: 0.5rem;
 }
-
 .article1 {
     display: flex;
     flex-direction: column;
@@ -218,7 +201,6 @@ p {
     font-size: 1.2rem;
     padding: 0.5rem;
 }
-
 .article2 img {
     box-shadow: 10px 10px 14px 8px rgba(0, 0, 0, 0.2);
     margin: 2rem;
@@ -257,7 +239,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
 footer a, i {
     color:rgb(255 255 255);
 }
@@ -284,6 +265,9 @@ footer a, i {
 /* Movile */
 
 @media (max-width: 559px) {
+    h1 {
+        font-size: 2.4rem;
+    }
     h2 {
         margin: 0;
     }

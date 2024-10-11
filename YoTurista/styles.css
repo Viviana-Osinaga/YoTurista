@@ -41,7 +41,6 @@ body {
     position: fixed;
 }
 .dropdown-content a {
-    text-decoration: none;
     color: rgb(231, 246, 242);
     font-weight: bold;
     font-size: 1.4rem;
@@ -70,6 +69,9 @@ i {
 }
 h1 i {
     color: rgb(23, 58, 49);
+}
+a {
+    text-decoration: none;
 }
 .introduccion {
     display: flex;

@@ -90,6 +90,7 @@ h2 {
     font-family:  'Prata', serif;
     padding: 1rem;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 img:hover {
     filter: drop-shadow(4px 4px 14px rgb(255, 255, 255));
@@ -101,6 +102,7 @@ img:hover {
 h3 {
     padding: 1rem;
     font-family:  'Prata', serif;
+    color: rgb(255, 255, 255);
 }
 .destinos {
     height: max-content;
@@ -202,6 +204,7 @@ p {
     font-family: 'Farsan', cursive,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
     padding: 0.5rem;
+    color:rgb(255 255 255);
 }
 .article2 img {
     box-shadow: 10px 10px 14px 8px rgba(0, 0, 0, 0.2);
